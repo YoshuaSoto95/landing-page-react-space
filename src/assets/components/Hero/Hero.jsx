@@ -1,14 +1,52 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import './Hero.css'
 
 const Hero = () => {
     return (
         <section className="hero">
             <div className="hero-content">
-                <h1 className="hero-title">Welcome to Our Website to Travel Space.</h1>
-                <h2 className='hero-subtitle'>Your Gateway to the Cosmos start to here.</h2>
-                <p className="hero-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab soluta inventore dignissimos magni velit sequi id, laborum voluptas totam distinctio accusamus debitis vitae repellat excepturi ipsa quo officiis iste perspiciatis?</p>
-                <button className="hero-button">Get Started</button>
+                {/* Título */}
+                <motion.h1
+                    className="hero-title"
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, ease: "easeOut" }}
+                >
+                    Welcome to Our Website to Travel Space.
+                </motion.h1>
+
+                {/* Subtítulo */}
+                <motion.h2
+                    className="hero-subtitle"
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+                >
+                    Your Gateway to the Cosmos starts here.
+                </motion.h2>
+
+                {/* Texto */}
+                <motion.p
+                    className="hero-text"
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
+                >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit dignissimos quod labore optio dolor quam vitae veritatis qui consectetur eos cum iure deleniti pariatur quia repellat, facilis veniam laboriosam nihil nisi nam dolores incidunt. Blanditiis ipsam numquam harum voluptate culpa?
+                </motion.p>
+
+                {/* Botón */}
+                <motion.button
+                    className="hero-button"
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 1, delay: 0.9 }}
+                >
+                    Get Started
+                </motion.button>
             </div>
         </section>
     )

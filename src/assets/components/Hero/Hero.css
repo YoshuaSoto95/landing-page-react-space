@@ -1,7 +1,7 @@
 .hero {
-    padding: 0 5rem;
+    padding: 0 8rem;
     height: 100vh;
-    background: url('../Hero/space-background.png') no-repeat center center/cover;
+    background: url('../../images/space-background.png') no-repeat center center/cover;
 }
 
 .hero-content {
@@ -13,16 +13,10 @@
     width: 70%;
 }
 
-.hero-content>* {
-    opacity: 0;
-    animation: fadeInUp 1s ease forwards;
-}
-
 .hero-title {
     font-size: 3.6rem;
     font-weight: 800;
     text-shadow: 0 0 10px var(--light);
-    animation-delay: 0.2s;
 }
 
 .hero-subtitle {
@@ -30,7 +24,6 @@
     font-weight: 700;
     text-shadow: 0 0 8px var(--light);
     margin-bottom: 1rem;
-    animation-delay: 0.4s;
 }
 
 .hero-text {
@@ -38,32 +31,24 @@
     font-weight: 600;
     line-height: 1.5;
     color: var(--text-secondary);
-    animation-delay: 0.6s;
 }
 
 .hero-button {
-    margin-top: 1.5rem;
-    padding: 1rem 6rem;
-    background: linear-gradient(270deg, var(--primary), var(--secondary), var(--highlight));
-    background-size: 400% 400%;
+    margin-top: 1.2rem;
+    padding: 1rem 8rem;
+    background-color: var(--primary);
     color: #fff;
-    font-size: 1.3rem;
-    font-weight: 700;
-    box-shadow: 0 8px 15px var(--background-dark);
     border: none;
     border-radius: 15px;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
-    animation-delay: 0.8s;
 }
 
 .hero-button:hover {
-    animation: none;
-    transition: all 0.3s ease;
-    transform: scale(1.05);
-    box-shadow: 0 0 10px var(--light);
     background-color: var(--highlight);
+    box-shadow: 0 0 10px #fff;
 }
 
 @media (max-width: 987px) {

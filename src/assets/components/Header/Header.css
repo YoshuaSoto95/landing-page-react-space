@@ -1,7 +1,7 @@
 .header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.788);
     backdrop-filter: blur(10px);
-    padding: 0.8rem 5rem;
+    padding: 0.8rem 8rem;
 }
 
 .container {
@@ -77,7 +77,7 @@
     background-color: #fff;
 }
 
-@media (max-width: 987px) {
+@media (max-width: 1058px) {
     .header {
         padding: 0.8rem 2rem;
     }
