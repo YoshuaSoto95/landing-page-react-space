@@ -1,0 +1,166 @@
+.destinations {
+    padding: 6rem 8rem;
+    height: auto;
+    background: url('../../images/destinations-section-II.png') no-repeat center center/cover;
+}
+
+.destinations__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title__destinations {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--light);
+    text-shadow: 0 0 10px var(--light);
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.card__destination:nth-child(1) {
+    background: url('../../images/moon.png') no-repeat center center/cover;
+    backdrop-filter: blur(10px);
+    height: 500px;
+    width: 400px;
+    text-align: center;
+    padding: 1.5rem 2rem 0.5rem 2rem;
+    border-radius: 15px;
+    border: 2px solid #ffffff3b;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.card__destination:nth-child(2) {
+    background: url('../../images/mars.png') no-repeat center center/cover;
+    backdrop-filter: blur(10px);
+    height: 500px;
+    width: 400px;
+    text-align: center;
+    padding: 1.5rem 2rem 0.5rem 2rem;
+    border-radius: 15px;
+    border: 2px solid #ffffff3b;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.card__destination:nth-child(3) {
+    background: url('../../images/europa.png') no-repeat center center/cover;
+    backdrop-filter: blur(10px);
+    height: 500px;
+    width: 400px;
+    text-align: center;
+    padding: 1.5rem 2rem 0.5rem 2rem;
+    border-radius: 15px;
+    border: 2px solid #ffffff3b;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.card__destination:nth-child(4) {
+    background: url('../../images/titan.png') no-repeat center center/cover;
+    backdrop-filter: blur(10px);
+    height: 500px;
+    width: 400px;
+    text-align: center;
+    padding: 1.5rem 2rem 0.5rem 2rem;
+    border-radius: 15px;
+    border: 2px solid #ffffff3b;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.card__destination:hover {
+    transform: scale(1.05);
+    box-shadow: 3px 8px 15px #ffffff65;
+    transition: transform 0.3s ease;
+}
+
+.card__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-shadow: 0 0 10px var(--light);
+    color: var(--light);
+}
+
+.card__text {
+    margin-top: 7rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: var(--light);
+    text-align: justify;
+    text-shadow: 0 0 10px var(--light);
+}
+
+.card__distance,
+.card__time {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--light);
+    text-shadow: 0 0 10px var(--light);
+}
+
+.card__destination .card__btn {
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    background-color: var(--primary);
+    color: var(--light);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card__destination .card__btn:hover {
+    background-color: var(--highlight);
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 987px) {
+    .destinations {
+        padding: 4rem 2rem;
+    }
+
+    .cards {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .card__destination {
+        width: 100%;
+        max-width: 400px;
+    }
+}

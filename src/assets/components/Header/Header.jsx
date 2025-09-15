@@ -8,10 +8,10 @@ const Header = () => {
                     <h2>Space <span>Tourism</span></h2>
                 </div>
                 <nav className="nav">
-                    <a href="#" className='nav__link'>About</a>
-                    <a href="#" className='nav__link'>Destinations</a>
-                    <a href="#" className='nav__link'>Blog</a>
-                    <a href="#" className='nav__link'>Contact</a>
+                    <a href="" className='nav__link'>About</a>
+                    <a href="" className='nav__link'>Destinations</a>
+                    <a href="" className='nav__link'>Blog</a>
+                    <a href="" className='nav__link'>Contact</a>
                 </nav>
                 <div className="cta__btn">
                     <button className='btn'>Get Started</button>

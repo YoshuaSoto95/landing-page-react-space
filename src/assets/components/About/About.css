@@ -23,7 +23,7 @@
     font-size: 3rem;
     font-weight: 700;
     color: var(--light);
-    text-shadow: 0 0 10px var(--highlight);
+    text-shadow: 0 0 10px var(--light);
     margin-bottom: 1rem;
 }
 
@@ -42,6 +42,21 @@
 .about__img {
     width: 100%;
     border-radius: 1rem;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 @media (max-width: 987px) {
