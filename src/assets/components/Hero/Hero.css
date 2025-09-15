@@ -1,5 +1,5 @@
 .hero {
-    padding: 0 8rem;
+    padding: 6rem 8rem 0 8rem;
     height: 100vh;
     background: url('../../images/space-background.png') no-repeat center center/cover;
 }
