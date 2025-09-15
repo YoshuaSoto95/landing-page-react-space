@@ -1,7 +1,11 @@
 .header {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.788);
-    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.808);
+    background: #0000006e;
+    backdrop-filter: blur(35px);
     padding: 0.8rem 8rem;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
 }
 
 .container {
@@ -63,7 +67,8 @@
     box-shadow: 0 0 10px #fff;
 }
 
-.toggle__btn {
+.toggle__btn,
+.btn-nav {
     display: none;
     cursor: pointer;
 }
@@ -89,6 +94,10 @@
 
     .cta__btn {
         display: none;
+    }
+
+    .btn-nav {
+        display: block;
     }
 
     .toggle__btn {
