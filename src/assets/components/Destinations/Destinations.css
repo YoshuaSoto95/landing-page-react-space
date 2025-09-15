@@ -30,7 +30,7 @@
 .card__destination:nth-child(1) {
     background: url('../../images/moon.png') no-repeat center center/cover;
     backdrop-filter: blur(10px);
-    height: 500px;
+    height: auto;
     width: 400px;
     text-align: center;
     padding: 1.5rem 2rem 0.5rem 2rem;
@@ -112,6 +112,7 @@
     font-size: 2.5rem;
     font-weight: 700;
     text-shadow: 0 0 10px var(--light);
+    text-align: center;
     color: var(--light);
 }
 
@@ -160,7 +161,43 @@
     }
 
     .card__destination {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media (max-width: 380px) {
+    .destinations {
+        padding: 2rem 1rem;
+    }
+
+    .title__destinations {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .card__destination {
         width: 100%;
-        max-width: 400px;
+        height: auto;
+        padding: 1rem 1.5rem 0.5rem 1.5rem;
+    }
+
+    .card__title {
+        font-size: 2rem;
+    }
+
+    .card__text {
+        font-size: 0.9rem;
+        margin-top: 5rem;
+    }
+
+    .card__distance,
+    .card__time {
+        font-size: 1.1rem;
+    }
+
+    .card__destination .card__btn {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
     }
 }
