@@ -3,9 +3,6 @@
     background: #0000006e;
     backdrop-filter: blur(35px);
     padding: 0.8rem 8rem;
-    width: 100%;
-    position: fixed;
-    z-index: 1000;
 }
 
 .container {
